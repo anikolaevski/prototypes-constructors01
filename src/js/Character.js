@@ -26,7 +26,8 @@ export function Character(name, type) {
     this.defense = legalType.defense;
   } catch (err) {
     // eslint-disable-next-line no-console
-    console.log(err);
+    this.error = err;
+    // console.log(err);
     // return err;
   }
 }
